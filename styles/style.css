@@ -9,8 +9,8 @@
     font-family: "Raleway", sans-serif!important;
  }
  .container-update{
-    width: 1240px;
+    max-width: 1240px;
+    width: 100%;
     padding: 0 20px;
-    margin: 0 -20px;
     margin: 0 auto;
  }

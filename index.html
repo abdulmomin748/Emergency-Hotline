@@ -18,17 +18,19 @@
                     <h1 class="font-bold text-xl">Emergency <br>Service</h1>
                 </div>
                 <div class="flex gap-6 items-center">
-                    <div class="flex items-center">
+                    <div class="flex items-center  cursor-default btn rounded-full bg-[#41ff6b1a]">
                         <span  class="font-bold" id="heart-quantity-hdr">0</span>
                         <img class="w-[25px] ml-2" src="assets/heart.png" alt="" srcset="">
                     </div>
                     <div class="flex items-center">
-                        <span id="conin-quantity" class="font-bold">100</span>
-                        <img class="w-[25px] ml-2" src="assets/coin.png" alt="" srcset="">
+                        <div class="flex items-center btn  cursor-default rounded-full bg-[#41ff6b1a]">
+                            <span id="conin-quantity" class="font-bold">100</span>
+                            <img class="w-[25px] ml-2" src="assets/coin.png" alt="" srcset="">
+                        </div>
                     </div>
-                    <div class="flex items-center btn btn-primary rounded-full">
-                        <span  class="font-bold id="copy-btn">2</span>
-                        <span  class="font-bold class=" ml-2">Copy</span>
+                    <div class="flex items-center btn btn-primary cursor-default border-0 outline-0 shadow-0 rounded-full bg-[#00a63e]">
+                        <span  class="font-bold" id="copy-btn">2</span>
+                        <span  class="font-bold" class=" ml-2">Copy</span>
                     </div>
                 </div>
             </div>
@@ -45,208 +47,262 @@
         </div>
     </section>
 
-    <section class="main">
+    <section class="main bg-[#f5fff6] pt-14 pb-18">
         <div class="container-update">
-            <div class="cntlr">
-                <div class="lft-cntlr">
-                    <div class="card bg-base-100 shadow-sm">
-                        <div>
-                            <img src="assets/emergency.png" alt="" srcset="">
-                            <i class="fa-regular fa-heart"></i>
+            <div class="cntlr flex">
+                <div class="lft-cntlr mr-8 w-3/4 grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-5">
+                    <div class="card bg-base-100 shadow-sm p-5">
+                        <div class="flex justify-between items-center mb-6">
+                            <div class="w-[60px] btn rounded-[16px] cursor-default h-[60px] flex justify-center items-center">
+                                <img  class="w-[25px]"  src="assets/emergency.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart text-xl"></i>
+                                <img class="w-[23px]" id="copy-heart" src="assets/heart.png" alt="">
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h2 id="card-title">National Emergency Number</h2>
+                        <div class="card-body-item">
+                            <h2 id="card-title" class=" font-bold text-xl mb-2">National Emergency Number</h2>
                             <span>National Emergency</span>
 
-                            <h2 id="emergency-number">999</h2>
+                            <h2 id="emergency-number" class="text-3xl font-bold mb-3">999</h2>
 
-                            <span class="category">All</span>
-                            <div class="card-actions justify-end">
-                                
-                                <button class="btn btn-outline btn-primary"><i class="fa-solid fa-clone"></i>Copy</button>
+                            <span class="category btn rounded-full bg-gray-100  cursor-default">All</span>
 
-                                <button class="btn btn-primary"><i class="fa-solid fa-phone"></i>Call</button>
+                            <div class="flex justify-between mt-6 w-full">
+                                <button class="btn w-1/2 btn-outline text-[grey] mr-2 border-[#d4d6d5]"><i class="fa-solid fa-clone"></i>Copy</button>
+
+                                <button class="btn w-1/2 hover:bg-[#686868] btn-primary shadow-none border-none rounded-md bg-[#00a63e]"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-base-100 shadow-sm">
-                        <div>
-                            <img src="assets/emergency.png" alt="" srcset="">
-                            <i id="dflt-heart" class="fa-regular fa-heart"></i>
-                            <img id="copy-heart" src="assets/heart.png" alt="">
+                    <div class="card bg-base-100 shadow-sm p-5">
+                        <div class="flex justify-between items-center mb-6">
+                            <div class="w-[60px] btn rounded-[16px] cursor-default h-[60px] flex justify-center items-center">
+                                <img  class="w-[25px]"  src="assets/emergency.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart text-xl"></i>
+                                <img class="w-[23px]" id="copy-heart" src="assets/heart.png" alt="">
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h2 id="card-title">National Emergency Number</h2>
+                        <div class="card-body-item">
+                            <h2 id="card-title" class=" font-bold text-xl mb-2">National Emergency Number</h2>
                             <span>National Emergency</span>
 
-                            <h2 id="emergency-number">999</h2>
+                            <h2 id="emergency-number" class="text-3xl font-bold mb-3">999</h2>
 
-                            <span class="category">All</span>
-                            <div class="card-actions justify-end">
-                                
-                                <button class="btn btn-outline btn-primary"><i class="fa-solid fa-clone"></i>Copy</button>
+                            <span class="category btn rounded-full bg-gray-100  cursor-default">All</span>
 
-                                <button class="btn btn-primary"><i class="fa-solid fa-phone"></i>Call</button>
+                            <div class="flex justify-between mt-6 w-full">
+                                <button class="btn w-1/2 btn-outline text-[grey] mr-2 border-[#d4d6d5]"><i class="fa-solid fa-clone"></i>Copy</button>
+
+                                <button class="btn w-1/2 hover:bg-[#686868] btn-primary shadow-none border-none rounded-md bg-[#00a63e]"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-base-100 shadow-sm">
-                        <div>
-                            <img src="assets/emergency.png" alt="" srcset="">
-                            <i class="fa-regular fa-heart"></i>
+                    <div class="card bg-base-100 shadow-sm p-5">
+                        <div class="flex justify-between items-center mb-6">
+                            <div class="w-[60px] btn rounded-[16px] cursor-default h-[60px] flex justify-center items-center">
+                                <img  class="w-[25px]"  src="assets/emergency.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart text-xl"></i>
+                                <img class="w-[23px]" id="copy-heart" src="assets/heart.png" alt="">
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h2 id="card-title">National Emergency Number</h2>
+                        <div class="card-body-item">
+                            <h2 id="card-title" class=" font-bold text-xl mb-2">National Emergency Number</h2>
                             <span>National Emergency</span>
 
-                            <h2 id="emergency-number">999</h2>
+                            <h2 id="emergency-number" class="text-3xl font-bold mb-3">999</h2>
 
-                            <span class="category">All</span>
-                            <div class="card-actions justify-end">
-                                
-                                <button class="btn btn-outline btn-primary"><i class="fa-solid fa-clone"></i>Copy</button>
+                            <span class="category btn rounded-full bg-gray-100  cursor-default">All</span>
 
-                                <button class="btn btn-primary"><i class="fa-solid fa-phone"></i>Call</button>
+                            <div class="flex justify-between mt-6 w-full">
+                                <button class="btn w-1/2 btn-outline text-[grey] mr-2 border-[#d4d6d5]"><i class="fa-solid fa-clone"></i>Copy</button>
+
+                                <button class="btn w-1/2 hover:bg-[#686868] btn-primary shadow-none border-none rounded-md bg-[#00a63e]"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-base-100 shadow-sm">
-                        <div>
-                            <img src="assets/emergency.png" alt="" srcset="">
-                            <i class="fa-regular fa-heart"></i>
+                    <div class="card bg-base-100 shadow-sm p-5">
+                        <div class="flex justify-between items-center mb-6">
+                            <div class="w-[60px] btn rounded-[16px] cursor-default h-[60px] flex justify-center items-center">
+                                <img  class="w-[25px]"  src="assets/emergency.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart text-xl"></i>
+                                <img class="w-[23px]" id="copy-heart" src="assets/heart.png" alt="">
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h2 id="card-title">National Emergency Number</h2>
+                        <div class="card-body-item">
+                            <h2 id="card-title" class=" font-bold text-xl mb-2">National Emergency Number</h2>
                             <span>National Emergency</span>
 
-                            <h2 id="emergency-number">999</h2>
+                            <h2 id="emergency-number" class="text-3xl font-bold mb-3">999</h2>
 
-                            <span class="category">All</span>
-                            <div class="card-actions justify-end">
-                                
-                                <button class="btn btn-outline btn-primary"><i class="fa-solid fa-clone"></i>Copy</button>
+                            <span class="category btn rounded-full bg-gray-100  cursor-default">All</span>
 
-                                <button class="btn btn-primary"><i class="fa-solid fa-phone"></i>Call</button>
+                            <div class="flex justify-between mt-6 w-full">
+                                <button class="btn w-1/2 btn-outline text-[grey] mr-2 border-[#d4d6d5]"><i class="fa-solid fa-clone"></i>Copy</button>
+
+                                <button class="btn w-1/2 hover:bg-[#686868] btn-primary shadow-none border-none rounded-md bg-[#00a63e]"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-base-100 shadow-sm">
-                        <div>
-                            <img src="assets/emergency.png" alt="" srcset="">
-                            <i class="fa-regular fa-heart"></i>
+                    <div class="card bg-base-100 shadow-sm p-5">
+                        <div class="flex justify-between items-center mb-6">
+                            <div class="w-[60px] btn rounded-[16px] cursor-default h-[60px] flex justify-center items-center">
+                                <img  class="w-[25px]"  src="assets/emergency.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart text-xl"></i>
+                                <img class="w-[23px]" id="copy-heart" src="assets/heart.png" alt="">
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h2 id="card-title">National Emergency Number</h2>
+                        <div class="card-body-item">
+                            <h2 id="card-title" class=" font-bold text-xl mb-2">National Emergency Number</h2>
                             <span>National Emergency</span>
 
-                            <h2 id="emergency-number">999</h2>
+                            <h2 id="emergency-number" class="text-3xl font-bold mb-3">999</h2>
 
-                            <span class="category">All</span>
-                            <div class="card-actions justify-end">
-                                
-                                <button class="btn btn-outline btn-primary"><i class="fa-solid fa-clone"></i>Copy</button>
+                            <span class="category btn rounded-full bg-gray-100  cursor-default">All</span>
 
-                                <button class="btn btn-primary"><i class="fa-solid fa-phone"></i>Call</button>
+                            <div class="flex justify-between mt-6 w-full">
+                                <button class="btn w-1/2 btn-outline text-[grey] mr-2 border-[#d4d6d5]"><i class="fa-solid fa-clone"></i>Copy</button>
+
+                                <button class="btn w-1/2 hover:bg-[#686868] btn-primary shadow-none border-none rounded-md bg-[#00a63e]"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-base-100 shadow-sm">
-                        <div>
-                            <img src="assets/emergency.png" alt="" srcset="">
-                            <i class="fa-regular fa-heart"></i>
+                    <div class="card bg-base-100 shadow-sm p-5">
+                        <div class="flex justify-between items-center mb-6">
+                            <div class="w-[60px] btn rounded-[16px] cursor-default h-[60px] flex justify-center items-center">
+                                <img  class="w-[25px]"  src="assets/emergency.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart text-xl"></i>
+                                <img class="w-[23px]" id="copy-heart" src="assets/heart.png" alt="">
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h2 id="card-title">National Emergency Number</h2>
+                        <div class="card-body-item">
+                            <h2 id="card-title" class=" font-bold text-xl mb-2">National Emergency Number</h2>
                             <span>National Emergency</span>
 
-                            <h2 id="emergency-number">999</h2>
+                            <h2 id="emergency-number" class="text-3xl font-bold mb-3">999</h2>
 
-                            <span class="category">All</span>
-                            <div class="card-actions justify-end">
-                                
-                                <button class="btn btn-outline btn-primary"><i class="fa-solid fa-clone"></i>Copy</button>
+                            <span class="category btn rounded-full bg-gray-100  cursor-default">All</span>
 
-                                <button class="btn btn-primary"><i class="fa-solid fa-phone"></i>Call</button>
+                            <div class="flex justify-between mt-6 w-full">
+                                <button class="btn w-1/2 btn-outline text-[grey] mr-2 border-[#d4d6d5]"><i class="fa-solid fa-clone"></i>Copy</button>
+
+                                <button class="btn w-1/2 hover:bg-[#686868] btn-primary shadow-none border-none rounded-md bg-[#00a63e]"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-base-100 shadow-sm">
-                        <div>
-                            <img src="assets/emergency.png" alt="" srcset="">
-                            <i class="fa-regular fa-heart"></i>
+                    <div class="card bg-base-100 shadow-sm p-5">
+                        <div class="flex justify-between items-center mb-6">
+                            <div class="w-[60px] btn rounded-[16px] cursor-default h-[60px] flex justify-center items-center">
+                                <img  class="w-[25px]"  src="assets/emergency.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart text-xl"></i>
+                                <img class="w-[23px]" id="copy-heart" src="assets/heart.png" alt="">
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h2 id="card-title">National Emergency Number</h2>
+                        <div class="card-body-item">
+                            <h2 id="card-title" class=" font-bold text-xl mb-2">National Emergency Number</h2>
                             <span>National Emergency</span>
 
-                            <h2 id="emergency-number">999</h2>
+                            <h2 id="emergency-number" class="text-3xl font-bold mb-3">999</h2>
 
-                            <span class="category">All</span>
-                            <div class="card-actions justify-end">
-                                
-                                <button class="btn btn-outline btn-primary"><i class="fa-solid fa-clone"></i>Copy</button>
+                            <span class="category btn rounded-full bg-gray-100  cursor-default">All</span>
 
-                                <button class="btn btn-primary"><i class="fa-solid fa-phone"></i>Call</button>
+                            <div class="flex justify-between mt-6 w-full">
+                                <button class="btn w-1/2 btn-outline text-[grey] mr-2 border-[#d4d6d5]"><i class="fa-solid fa-clone"></i>Copy</button>
+
+                                <button class="btn w-1/2 hover:bg-[#686868] btn-primary shadow-none border-none rounded-md bg-[#00a63e]"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-base-100 shadow-sm">
-                        <div>
-                            <img src="assets/emergency.png" alt="" srcset="">
-                            <i class="fa-regular fa-heart"></i>
+                    <div class="card bg-base-100 shadow-sm p-5">
+                        <div class="flex justify-between items-center mb-6">
+                            <div class="w-[60px] btn rounded-[16px] cursor-default h-[60px] flex justify-center items-center">
+                                <img  class="w-[25px]"  src="assets/emergency.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart text-xl"></i>
+                                <img class="w-[23px]" id="copy-heart" src="assets/heart.png" alt="">
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h2 id="card-title">National Emergency Number</h2>
+                        <div class="card-body-item">
+                            <h2 id="card-title" class=" font-bold text-xl mb-2">National Emergency Number</h2>
                             <span>National Emergency</span>
 
-                            <h2 id="emergency-number">999</h2>
+                            <h2 id="emergency-number" class="text-3xl font-bold mb-3">999</h2>
 
-                            <span class="category">All</span>
-                            <div class="card-actions justify-end">
-                                
-                                <button class="btn btn-outline btn-primary"><i class="fa-solid fa-clone"></i>Copy</button>
+                            <span class="category btn rounded-full bg-gray-100  cursor-default">All</span>
 
-                                <button class="btn btn-primary"><i class="fa-solid fa-phone"></i>Call</button>
+                            <div class="flex justify-between mt-6 w-full">
+                                <button class="btn w-1/2 btn-outline text-[grey] mr-2 border-[#d4d6d5]"><i class="fa-solid fa-clone"></i>Copy</button>
+
+                                <button class="btn w-1/2 hover:bg-[#686868] btn-primary shadow-none border-none rounded-md bg-[#00a63e]"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-base-100 shadow-sm">
-                        <div>
-                            <img src="assets/emergency.png" alt="" srcset="">
-                            <i class="fa-regular fa-heart"></i>
+                    <div class="card bg-base-100 shadow-sm p-5">
+                        <div class="flex justify-between items-center mb-6">
+                            <div class="w-[60px] btn rounded-[16px] cursor-default h-[60px] flex justify-center items-center">
+                                <img  class="w-[25px]"  src="assets/emergency.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart text-xl"></i>
+                                <img class="w-[23px]" id="copy-heart" src="assets/heart.png" alt="">
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h2 id="card-title">National Emergency Number</h2>
+                        <div class="card-body-item">
+                            <h2 id="card-title" class=" font-bold text-xl mb-2">National Emergency Number</h2>
                             <span>National Emergency</span>
 
-                            <h2 id="emergency-number">999</h2>
+                            <h2 id="emergency-number" class="text-3xl font-bold mb-3">999</h2>
 
-                            <span class="category">All</span>
-                            <div class="card-actions justify-end">
-                                
-                                <button class="btn btn-outline btn-primary"><i class="fa-solid fa-clone"></i>Copy</button>
+                            <span class="category btn rounded-full bg-gray-100  cursor-default">All</span>
 
-                                <button class="btn btn-primary"><i class="fa-solid fa-phone"></i>Call</button>
+                            <div class="flex justify-between mt-6 w-full">
+                                <button class="btn w-1/2 btn-outline text-[grey] mr-2 border-[#d4d6d5]"><i class="fa-solid fa-clone"></i>Copy</button>
+
+                                <button class="btn w-1/2 hover:bg-[#686868] btn-primary shadow-none border-none rounded-md bg-[#00a63e]"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="rgt-cntlr">
-                    <div>
-                        <span>
+                <div class="rgt-cntlr shadow-sm bg-white  w-1/4 p-5">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="font-semibold">
                             <i class="fa-solid fa-clock-rotate-left"></i>
                             Call History
-                        </div>
-                        <button id="clear-btn" class="btn btn-primary">Primary</button>
+                        </span>
+                        <button class="btn w-[100px] hover:bg-[#686868] btn-primary text-white shadow-none border-none rounded-full bg-[#00a63e]">Clear</button>
                     </div>
                     <div class="call-items-cntlr">
-                        <div class="static">
+                        <div class="static bg-[#fafafa] p-3 mb-4">
                             <div>
-                                <h4>Fire Service Number</h4>
+                                <h4 class="font-semibold">Fire Service Number</h4>
                                 <span>999</span>
                             </div>
                             <div>
-                                <span>11:36:58 Am</span>
+                                <span>11:36:58 Am -</span>
+                                <span>28/08/2025</span>
+                            </div>
+                        </div>
+                        <div class="static bg-[#fafafa] p-3 mb-4">
+                            <div>
+                                <h4 class="font-semibold">Fire Service Number</h4>
+                                <span>999</span>
+                            </div>
+                            <div>
+                                <span>11:36:58 Am -</span>
                                 <span>28/08/2025</span>
                             </div>
                         </div>
