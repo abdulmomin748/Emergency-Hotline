@@ -7,33 +7,36 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="cntlr">
-                <div class="hdr-lgo">
-                    <img src="assets/logo.png" alt="">
-                    <h1>Emergency <br>Service</h1>
+    <header class="py-8">
+        <div class="container-update">
+            <div class="cntlr flex justify-between">
+                <div class="hdr-lgo flex items-center">
+                    <img class="w-[50px] mr-2" src="assets/logo.png" alt="">
+                    <h1 class="font-bold text-xl">Emergency <br>Service</h1>
                 </div>
-                <div>
-                    <span id="heart-quantity-hdr"></span>
-                    <img src="assets/heart.png" alt="" srcset="">
-                </div>
-                <div>
-                    <span id="conin-quantity">100</span>
-                    <img src="assets/coin.png" alt="" srcset="">
-                </div>
-                <div>
-                    <span id="copy-btn">2</span>
-                    <span>Copy</span>
+                <div class="flex gap-6 items-center">
+                    <div class="flex items-center">
+                        <span  class="font-bold" id="heart-quantity-hdr">0</span>
+                        <img class="w-[25px] ml-2" src="assets/heart.png" alt="" srcset="">
+                    </div>
+                    <div class="flex items-center">
+                        <span id="conin-quantity" class="font-bold">100</span>
+                        <img class="w-[25px] ml-2" src="assets/coin.png" alt="" srcset="">
+                    </div>
+                    <div class="flex items-center btn btn-primary rounded-full">
+                        <span  class="font-bold id="copy-btn">2</span>
+                        <span  class="font-bold class=" ml-2">Copy</span>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
     <section class="banner-sec">
-        <div class="container">
+        <div class="container-update">
             <div class="cntlr">
                 <h1>Emergency Service Directory</h1>
                 <p>Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
@@ -42,7 +45,7 @@
     </section>
 
     <section class="main">
-        <div class="container">
+        <div class="container-update">
             <div class="cntlr">
                 <div class="lft-cntlr">
                     <div class="card bg-base-100 shadow-sm">
@@ -251,13 +254,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
 
     <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>

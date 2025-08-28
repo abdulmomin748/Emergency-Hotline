@@ -5,3 +5,12 @@
   font-weight: <weight>;
   font-style: normal;
 } */
+ body{
+    font-family: "Raleway", sans-serif!important;
+ }
+ .container-update{
+    width: 1240px;
+    padding: 0 20px;
+    margin: 0 -20px;
+    margin: 0 auto;
+ }
