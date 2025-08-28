@@ -12,25 +12,28 @@
 <body>
     <header class="py-8">
         <div class="container-update">
-            <div class="cntlr flex justify-between">
+            <div class="cntlr flex justify-between items-center">
                 <div class="hdr-lgo flex items-center">
                     <img class="w-[50px] mr-2" src="assets/logo.png" alt="">
                     <h1 class="font-bold text-xl">Emergency <br>Service</h1>
                 </div>
-                <div class="flex gap-6 items-center">
-                    <div class="flex items-center  cursor-default btn rounded-full bg-[#41ff6b1a]">
-                        <span  class="font-bold" id="heart-quantity-hdr">0</span>
-                        <img class="w-[25px] ml-2" src="assets/heart.png" alt="" srcset="">
-                    </div>
-                    <div class="flex items-center">
-                        <div class="flex items-center btn  cursor-default rounded-full bg-[#41ff6b1a]">
-                            <span id="conin-quantity" class="font-bold">100</span>
-                            <img class="w-[25px] ml-2" src="assets/coin.png" alt="" srcset="">
+                <div class="flex items-center">
+                    <div id="humberger" class="sm:hidden block"><i class="fa-solid fa-bars"></i></div>
+                    <div id="menu" class="sm:flex hidden gap-6 items-center">
+                        <div class="flex items-center  cursor-default btn rounded-full bg-[#41ff6b1a]">
+                            <span  class="font-bold" id="heart-quantity-hdr">0</span>
+                            <img class="w-[25px] ml-2" src="assets/heart.png" alt="" srcset="">
                         </div>
-                    </div>
-                    <div class="flex items-center btn btn-primary cursor-default border-0 outline-0 shadow-0 rounded-full bg-[#00a63e]">
-                        <span  class="font-bold" id="copy-btn">2</span>
-                        <span  class="font-bold" class=" ml-2">Copy</span>
+                        <div class="flex items-center">
+                            <div class="flex items-center btn  cursor-default rounded-full bg-[#41ff6b1a]">
+                                <span id="conin-quantity" class="font-bold">100</span>
+                                <img class="w-[25px] ml-2" src="assets/coin.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="flex items-center btn btn-primary cursor-default btext-white shadow-none border-none rounded-full bg-[#00a63e]">
+                            <span  class="font-bold" id="copy-btn">2</span>
+                            <span  class="font-bold" class=" ml-2">Copy</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -39,7 +42,7 @@
 
     <section class="banner-sec bg-gradient-to-r from-[#013223] via-[#01322380] to-[#013223]">
         <div class="container-update">
-            <div class="cntlr py-10 flex items-center flex-col">
+            <div class="cntlr text-center py-10 flex items-center flex-col">
                 <img class="w-[90px] mr-2 mb-2" src="assets/logo-dark.png" alt="" srcset="">
                 <h1 class="text-4xl mb-4 text-white font-bold">Emergency Service Directory</h1>
                 <p class="text-xl text-white font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
@@ -49,8 +52,8 @@
 
     <section class="main bg-[#f5fff6] pt-14 pb-18">
         <div class="container-update">
-            <div class="cntlr flex">
-                <div class="lft-cntlr mr-8 w-3/4 grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-5">
+            <div class="cntlr sm:flex-row flex-col flex">
+                <div class="order-2 sm:order-1 lft-cntlr mr-5 w-full sm:w-3/4 grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2  gap-5">
                     <div class="card bg-base-100 shadow-sm p-5">
                         <div class="flex justify-between items-center mb-6">
                             <div class="w-[60px] btn rounded-[16px] cursor-default h-[60px] flex justify-center items-center">
@@ -277,13 +280,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="rgt-cntlr shadow-sm bg-white  w-1/4 p-5">
+                <div class="order-1 sm:order-2 rgt-cntlr shadow-sm bg-white w-full sm:w-1/4 p-5">
                     <div class="flex justify-between items-center mb-4">
                         <span class="font-semibold">
                             <i class="fa-solid fa-clock-rotate-left"></i>
                             Call History
                         </span>
-                        <button class="btn w-[100px] hover:bg-[#686868] btn-primary text-white shadow-none border-none rounded-full bg-[#00a63e]">Clear</button>
+                        <button class="btn w-[70px] ml-3 lg:w-[100px] hover:bg-[#686868] btn-primary text-white shadow-none border-none rounded-full bg-[#00a63e]">Clear</button>
                     </div>
                     <div class="call-items-cntlr">
                         <div class="static bg-[#fafafa] p-3 mb-4">
