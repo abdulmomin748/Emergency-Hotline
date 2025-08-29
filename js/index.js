@@ -23,12 +23,12 @@ const callF = () => {
                 const div = document.createElement('div');
                 div.innerHTML = `<div class="static bg-[#fafafa] p-3 mb-4">
                 <div>
-                    <h4 class="font-semibold">Fire Service Number</h4>
-                    <span>999</span>
+                    <h4 class="font-semibold">${singleData.title}</h4>
+                    <span>${singleData.emergencyNumb}</span>
                 </div>
                 <div>
-                    <span>11:36:58 Am -</span>
-                    <span>28/08/2025</span>
+                    <span>${singleData.getTime}-</span>
+                    <span>${singleData.getYear}/span>
                 </div>
             </div>`
             callsHisContainer.appendChild(div);
