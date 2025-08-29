@@ -1,4 +1,5 @@
 const callTimeData = [];
+let callsHisContainer;
 const callF = () => {
     const callBtns = document.querySelectorAll('.call-btn');
 
@@ -25,7 +26,7 @@ const callF = () => {
             callTimeData.push({title,emergencyNumb,getYear,getTime});
             console.log(callTimeData);
             
-            const callsHisContainer = document.getElementById('call-items-cntlr');
+            callsHisContainer = document.getElementById('call-items-cntlr');
             callsHisContainer.innerText = '';
 
             for (const singleData of callTimeData) {
@@ -41,10 +42,16 @@ const callF = () => {
                 </div>
             </div>`
             callsHisContainer.appendChild(div);
-            
+
             }
+           
         })
     }
 
 }
-callF()
+callF();
+
+document.getElementById('clear-btn').addEventListener('click', () => {
+    alert('hi')
+    callsHisContainer.innerText = '';
+})
