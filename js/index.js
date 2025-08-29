@@ -1,5 +1,7 @@
 const callTimeData = [];
 let callsHisContainer;
+
+// call call function
 const callF = () => {
     const callBtns = document.querySelectorAll('.call-btn');
 
@@ -47,14 +49,13 @@ const callF = () => {
            
         })
     }
-
 }
 callF();
 
 // clear call history
 document.getElementById('clear-btn').addEventListener('click', () => {
-    alert('hi')
     callsHisContainer.innerText = '';
+
 })
 
 // toggle function
@@ -83,3 +84,34 @@ function toggleImage() {
     }
     
 }toggleImage();
+
+
+// copy button
+function copyButton() {
+
+    let copyQuantity = document.getElementById('total-copy');
+    let copyItems = document.querySelectorAll('.copy-btn');
+
+    for (const copyItem of copyItems) {
+        
+        copyItem.addEventListener('click', () => {
+
+            copyQuantity.innerText = parseInt(copyQuantity.innerText) + 1;
+
+            const hotlineNumber = copyItem.parentNode.parentNode.children[2].innerText;
+            navigator.clipboard.writeText(hotlineNumber);
+
+            copyItem.children[1].innerText = 'Copied';
+            copyItem.disabled = true
+
+            setTimeout(() => {
+                copyItem.children[1].innerText = 'copy';
+                copyItem.disabled = false; 
+            }, 2000);
+            alert(`${copyItem.parentNode.parentNode.children[1].innerText} 🔢No. Copied`);
+            
+            
+        })
+
+    }
+}copyButton();
