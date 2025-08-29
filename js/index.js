@@ -51,7 +51,35 @@ const callF = () => {
 }
 callF();
 
+// clear call history
 document.getElementById('clear-btn').addEventListener('click', () => {
     alert('hi')
     callsHisContainer.innerText = '';
 })
+
+// toggle function
+function toggleImage() {
+    let hearts = document.querySelectorAll('.heart-parent');
+    
+    for (const heartItem of hearts) {
+        const img = heartItem.querySelector('.heart');
+        let count = document.getElementById('heart-copy');
+        
+        heartItem.addEventListener('click', () =>{
+            
+        let counNumber = parseInt(count.innerText);
+
+        if (img.getAttribute("src") === "assets/heartD.png") {
+            img.setAttribute("src", "assets/heart-copy.png");
+            count.innerHTML = counNumber + 1;
+            console.log(count,counNumber);
+            
+        } else {
+            img.setAttribute("src", "assets/heartD.png");
+            count.innerHTML = counNumber - 1;
+            console.log(count,counNumber);
+        }
+    })
+    }
+    
+}toggleImage();
